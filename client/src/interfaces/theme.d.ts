@@ -1,4 +1,4 @@
-import "@refinedev/mui";
+import '@pankod/refine-mui';
 
 export interface CustomTheme {
   // Add custom variables here like below:
@@ -7,9 +7,9 @@ export interface CustomTheme {
   // };
 }
 
-declare module "@refinedev/mui" {
-  interface Theme extends import("@refinedev/mui").Theme, CustomTheme {}
+declare module '@pankod/refine-mui' {
+  interface Theme extends import('@pankod/refine-mui').Theme, CustomTheme {}
   interface ThemeOptions
-    extends import("@refinedev/mui").ThemeOptions,
+    extends import('@pankod/refine-mui').ThemeOptions,
       CustomTheme {}
 }
