@@ -1,4 +1,4 @@
-import { AuthBindings, GitHubBanner, Refine } from "@refinedev/core";
+import { AuthBindings, Refine } from "@refinedev/core";
 import { RefineKbar, RefineKbarProvider } from "@refinedev/kbar";
 import {
   RefineSnackbarProvider,
@@ -19,6 +19,7 @@ import { ColorModeContextProvider } from "@contexts";
 import { CssBaseline, GlobalStyles } from "@mui/material";
 import dataProvider from "@refinedev/simple-rest";
 
+
 const API_URL = "https://api.fake-rest.refine.dev";
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -37,6 +38,7 @@ const App = (props: React.PropsWithChildren) => {
   if (status === "loading") {
     return <span>loading...</span>;
   }
+
 
   const authProvider: AuthBindings = {
     login: async () => {
@@ -95,7 +97,6 @@ const App = (props: React.PropsWithChildren) => {
 
   return (
     <>
-      <GitHubBanner />
       <RefineKbarProvider>
         <ColorModeContextProvider>
           <CssBaseline />

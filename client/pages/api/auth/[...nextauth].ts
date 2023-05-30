@@ -6,10 +6,10 @@ export const authOptions = {
   providers: [
     // !!! Should be stored in .env file.
     GoogleProvider({
-      clientId: `477775060025-dtg8bbi9fi2ff3o95b25gog1hlik9i6b.apps.googleusercontent.com`,
-      clientSecret: `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`,
+      clientId: `599831188301-7fdce6ra19lm9iue00delg0dioqiai3o.apps.googleusercontent.com`,
+      clientSecret: `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`,
     }),
   ],
-  secret: `UItTuD1HcGXIj8ZfHUswhYdNd40Lc325R8VlxQPUoR0=`,
+  secret: `O0o/xyOM+Q8lPugMC7NgzhdaZfHOW3SNXcnN2IRfRiQ=`,
 };
 export default NextAuth(authOptions);
